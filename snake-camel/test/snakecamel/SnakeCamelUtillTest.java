@@ -10,7 +10,7 @@ public class SnakeCamelUtillTest {
 	@Test
 	public void snakeToCamelcaseでスネークからキャメルに() {
 		SnakeCamelUtil snaketocamel = new SnakeCamelUtil();
-		String expected = "theBook";
+		String expected = "TheBook";
 		String actual = snaketocamel.snakeToCamelcase("the_book");
 		assertThat(actual, is(expected));
 	}
@@ -19,7 +19,7 @@ public class SnakeCamelUtillTest {
 	public void camelToSnakecaseでキャメルからスネークに(){
 		SnakeCamelUtil cameltosnake = new SnakeCamelUtil();
 		String expected = "the_book";
-		String actual = cameltosnake.camelToSnakecase("theBook");
+		String actual = cameltosnake.camelToSnakecase("TheBook");
 		assertThat(actual, is(expected));
 	}
 }
