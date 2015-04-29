@@ -14,6 +14,7 @@ public class SnakeCamelUtillTest {
 		String actual = snaketocamel.snakeToCamelcase("the_book");
 		assertThat(actual, is(expected));
 	}
+	
 	@Test
 	public void camelToSnakecaseでキャメルからスネークに(){
 		SnakeCamelUtil cameltosnake = new SnakeCamelUtil();
