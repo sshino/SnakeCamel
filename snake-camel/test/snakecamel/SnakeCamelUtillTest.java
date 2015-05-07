@@ -10,9 +10,9 @@ public class SnakeCamelUtillTest {
 	@Test
 	public void snakeToCamelcaseでスネークからキャメルに() {
 		SnakeCamelUtil snaketocamel = new SnakeCamelUtil();
-		String expected = "TheBook";
-		String actual = snaketocamel.snakeToCamelcase("the_book");
-		assertThat(actual, is(expected));
+		String expected1 = "AbcDef";
+		String actual1 = snaketocamel.snakeToCamelcase("_abc__def");
+		assertThat(actual1, is(expected1));
 	}
 	
 	@Test
@@ -26,8 +26,8 @@ public class SnakeCamelUtillTest {
 	@Test
 	public void capitalizeで小文字を大文字に(){
 		SnakeCamelUtil Capitalize = new SnakeCamelUtil();
-		String expected = "A";
-		String actual = Capitalize.capitalize("a");
+		String expected = " ";
+		String actual = Capitalize.capitalize(" ");
 		assertThat(actual, is(expected));
 	}
 	
